@@ -1,0 +1,62 @@
+@import "colors.less";
+@import "fonts.less";
+@import "preboot.less";
+@import "retina.less";
+
+// * * * * * CONTENT STYLES * * * * * * //
+body
+{
+	background-color: @BackgroundBlue;
+	color: @LightWhite;	
+}
+
+
+// * * * * * MEDIA QUERIES STYLES * * * * * * //
+/* Larger than standard 960 (devices and browsers) */
+@media only screen and (min-width: 960px) 
+{  	
+	body { color: red; }
+	.animated-head { height: 100%;}
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) 
+{
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) 
+{  	
+	
+	body { color: blue; }
+	.animated-head { height: 75%;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) 
+{
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) 
+{
+	
+	body { color: yellow; }
+	.animated-head { height: 50%;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) 
+{
+	
+	body { color: green; }
+	.animated-head { height: 25%;}
+}
+
+// * * * * * IMAGE STYLES * * * * * * //
+.animated-head
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

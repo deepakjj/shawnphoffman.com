@@ -1,0 +1,232 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-variant"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"include",
+				"include_once"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 71.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/contact.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/flatstrap/forms.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/themes.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/apps.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/index.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/retina.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/_application.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/colors.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/preboot.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/flatstrap/themes.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/flatstrap/responsive-767px-max.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/svgs/HeaderStripes.svg",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/svgs/DiversionDevelopment_Header.svg",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Shared/_header.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/scripts/inline-svg-replace.js",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/svgs/GitHub.svg",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Shared/_footer.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Shared/_scripts_bottom.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Shared/_scripts_top.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/about.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/bootstrap/responsive.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Shared/_nav.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Shared/_head-icons.php",
+		"/Users/shawnhoffman/Library/Application Support/Sublime Text 2/Packages/JSLint/JSLint.sublime-settings",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/fonts.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/README.md",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/index2.php",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/analyticstracking.php",
+		"/Users/shawnhoffman/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/shawnhoffman/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/shawnhoffman/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/index.html",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/less/bootstrap/responsive-767px-max.less",
+		"/Users/shawnhoffman/Dropbox/Diversion/Diversion-Site/Content/scripts/inline-svg_replace.js",
+		"/Users/shawnhoffman/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"-pattern-",
+			"baseFontSize",
+			".container-fluid",
+			"points",
+			"0",
+			"install",
+			"package control",
+			"package"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"-"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true
+}
