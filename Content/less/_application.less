@@ -6,8 +6,18 @@
 // * * * * * CONTENT STYLES * * * * * * //
 body
 {
+	font-family: @font-family-segoe-light;
 	background-color: @BackgroundBlue;
 	color: @LightWhite;	
+	height: 3000px;
+
+	#stripes
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -10;
+	}
 }
 
 
@@ -17,6 +27,7 @@ body
 {  	
 	body { color: red; }
 	.animated-head { height: 100%;}
+	.animated-head-mobile { display: none;}
 }
 
 /* Smaller than standard 960 (devices and browsers) */
@@ -30,6 +41,7 @@ body
 	
 	body { color: blue; }
 	.animated-head { height: 75%;}
+	.animated-head-mobile { display: none;}
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -43,6 +55,7 @@ body
 	
 	body { color: yellow; }
 	.animated-head { height: 50%;}
+	.animated-head-mobile { display: none;}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -50,7 +63,12 @@ body
 {
 	
 	body { color: green; }
-	.animated-head { height: 25%;}
+	.animated-head { display: none; }
+	.animated-head-mobile 
+	{ 
+		display: inline;
+		width: 35%;
+	}
 }
 
 // * * * * * IMAGE STYLES * * * * * * //
@@ -59,4 +77,5 @@ body
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	z-index: 0;
 }
