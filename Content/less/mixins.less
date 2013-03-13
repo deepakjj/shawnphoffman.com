@@ -1,0 +1,17 @@
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.shadow(@size: 5px, @color: @Blue3)
+{
+	box-shadow: @size @size 0px fadeout(darken(@color, 40%), 80%);
+}
+
+.svg-shadow {
+    -webkit-filter: drop-shadow( 5px 5px 0px fadeout(darken(@Blue4, 40%), 70%));
+            filter: drop-shadow( 5px 5px 0px fadeout(darken(@Blue4, 40%), 70%)); /* Same syntax as box-shadow */
+}

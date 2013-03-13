@@ -1,33 +1,142 @@
 @import "colors.less";
 @import "fonts.less";
+@import "mixins.less";
 @import "preboot.less";
 @import "retina.less";
+
+@TotalWidth: 959px;
+@ContentWidth: @TotalWidth * .7;
+@ProfileWidth: @TotalWidth * .3;
 
 // * * * * * CONTENT STYLES * * * * * * //
 body
 {
 	font-family: @font-family-segoe-light;
-	background-color: @BackgroundBlue;
-	color: @LightWhite;	
-	height: 3000px;
+	background-color: @Blue4;
+	color: @Grey2;
+}
 
-	#stripes
+#stripes
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+section
+{
+	background-color: @Blue3;
+	.rounded-corners(5px);
+	padding: 10px;
+	margin: 10px;
+	.shadow();
+}
+
+#header
+{
+	font-size: 26px;
+	font-variant: small-caps;
+
+	hr
 	{
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: -10;
+		margin: 0;
+		padding: 0;
 	}
+
+	h1
+	{	
+		font-family: @font-family-segoe-slight;
+		color: @Grey1;
+		font-size: 54px;
+		margin: 0;
+		padding: 5px 0 0 0;
+		text-shadow: 7px 7px 0px fadeout(darken(#000000, 20%), 80%);
+		font-variant: small-caps;
+	}
+	img 
+	{ 
+		padding: 5px;
+	}
+}
+
+h2 
+{
+	color: @Orange2;
+	margin: 0;
+	font-variant: small-caps;
+	font-size: 36px;
+	text-shadow: 3px 3px 0px fadeout(darken(@Blue3, 20%), 80%);
+}
+
+hr 
+{
+	border-width: 2px; 
+	border-color: @Orange3;
+}
+
+a { text-decoration: none; }
+
+#contact>div
+{
+	text-align: center;
+}
+
+
+
+// * * * * * IMAGE STYLES * * * * * * //
+.animated-head
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.contact-icon
+{
+	fill: @Grey2;
+	&:hover { fill: @Grey1; .svg-shadow(); }
+	&:active { fill: @Blue1; .svg-shadow(); }
+	width: 25%;
+	height: 100%;
 }
 
 
 // * * * * * MEDIA QUERIES STYLES * * * * * * //
 /* Larger than standard 960 (devices and browsers) */
 @media only screen and (min-width: 960px) 
-{  	
-	body { color: red; }
-	.animated-head { height: 100%;}
+{
+	#wrapper 
+	{ 
+		width: @TotalWidth;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+
+	#content
+	{
+		width: @ContentWidth;
+	}
+
+	#side-profile
+	{
+		img 
+		{
+			width: 29%;
+		}
+		
+		width: @ProfileWidth;
+	}
+
+	.animated-head { }
 	.animated-head-mobile { display: none;}
+	.contact-icon
+	{
+		margin: 5px;
+		width: 12%;
+		height: 100%;
+	}
 }
 
 /* Smaller than standard 960 (devices and browsers) */
@@ -37,45 +146,111 @@ body
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) 
-{  	
-	
-	body { color: blue; }
-	.animated-head { height: 75%;}
-	.animated-head-mobile { display: none;}
+{
+	.animated-head { display: none;}
+	.animated-head-mobile 
+	{ 
+		float: left;
+		display: inline;
+		width: 20%;
+	}
+
+	#header
+	{
+		h1 
+		{
+			float: left;
+			max-width: 70%;
+			font-size: 62px;
+		}
+
+		hr 
+		{
+			clear: both;
+		}
+
+		img
+		{			
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 30px;
+			padding-right: 30px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.contact-icon
+	{
+		margin: 5px;
+		width: 12%;
+		height: 100%;
+	}
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) 
-{
+{	
+	.animated-head { display: none; }
+	.animated-head-mobile 
+	{ 
+		float: left;
+		display: inline;
+		width: 20%;
+	}
+
+	#header
+	{
+		h1 
+		{
+			float: left;
+			max-width: 70%;
+			font-size: 48px;
+		}
+
+		hr 
+		{
+			clear: both;
+		}
+
+		img
+		{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) 
 {
-	
-	body { color: yellow; }
-	.animated-head { height: 50%;}
-	.animated-head-mobile { display: none;}
+	.contact-icon
+	{
+		margin: 5px;
+	}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) 
 {
-	
-	body { color: green; }
-	.animated-head { display: none; }
-	.animated-head-mobile 
-	{ 
-		display: inline;
-		width: 35%;
-	}
-}
+	#header
+	{
+		h1 
+		{
+			font-size: 38px;
+		}
 
-// * * * * * IMAGE STYLES * * * * * * //
-.animated-head
-{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 0;
+		div
+		{
+			font-size: 22px;
+		}
+	}
+
+	.contact-icon
+	{
+		margin: 2px;
+	}
 }

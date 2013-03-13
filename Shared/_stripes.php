@@ -1,13 +1,14 @@
 <canvas id="stripes" width="2000" height="80"></canvas>
 <script>
   var canvas = document.getElementById('stripes');
-  var context = canvas.getContext('2d');
-  context.lineWidth = 10;
-  context.beginPath();
-  context.moveTo(0, 50);
-  context.lineTo(10000, 50);
-  context.strokeStyle = '#7f8c8d';
-  context.stroke();
+  
+  var line1 = canvas.getContext('2d');
+  line1.lineWidth = 10;
+  line1.beginPath();
+  line1.moveTo(0, 50);
+  line1.lineTo(10000, 50);
+  line1.strokeStyle = '#7f8c8d';
+  line1.stroke();
 
   var line2 = canvas.getContext('2d');
   line2.lineWidth = 10;
