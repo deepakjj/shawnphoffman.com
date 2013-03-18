@@ -1,3 +1,4 @@
+<? include_once('Shared/_gzip.php'); ?> 
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,8 +9,13 @@
     <? include_once('Shared/_head-icons.php'); ?>
 
     <? /* CSS / LESS (Optimize before deployment) */ ?>
+    <? /*
     <link rel="stylesheet/less" type="text/css" href="/Content/less/normalize.less" />
     <link rel="stylesheet/less" type="text/css" href="/Content/less/_application.less" />
+    */ ?>
+
+    <link rel="stylesheet" type="text/css" href="/Content/less/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/less/_application.css" />
 
     <? /* TOP-LOAD JS (Optimize before deployment) */ ?>
     <? include_once("Shared/_scripts_top.php"); ?>
@@ -55,7 +61,7 @@
         </section>  
       </div>
       <div id="side-profile">
-        <img src="/Content/images/animated.png" class="animated-head" />  
+        <img src="/Content/images/animated.png" class="animated-head" alt="Illustration by Rey Paez" title="Illustration by Rey Paez" />  
       </div>
     </div>
   </body>
