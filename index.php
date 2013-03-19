@@ -34,7 +34,7 @@
         </section>
         <section id="about">
           <h2>About</h2>
-          <div>Grew up in Indiana. Graduated from Purdue University. Work for Sogeti USA. Own Trap Graphics. Co-own Diversion Development. Avid web developer. Open source contributor. Life-long learner. Problem solver.</div>
+          <div>Grew up in Indiana. Graduated from Purdue University. Work for Sogeti USA. Owner of Trap Graphics. Co-owner of Diversion Development. Avid web developer. Open source contributor. Problem solver.</div>
         </section>
         <section id="contact">
           <h2>Contact</h2>
@@ -66,5 +66,8 @@
     </div>
   </body>
   <? /* BOTTOM-LOAD JS (Optimize before deployment) */ ?>
+  <script>
+    jQuery("img.svg").each(function(){var e=jQuery(this);var t=e.attr("id");var n=e.attr("class");var r=e.attr("src");jQuery.get(r,function(r){var i=jQuery(r).find("svg");if(typeof t!=="undefined"){i=i.attr("id",t)}if(typeof n!=="undefined"){i=i.attr("class",n+" replaced-svg")}i=i.removeAttr("xmlns:a");e.replaceWith(i)})})
+  </script>
   <? include_once("Shared/_scripts_bottom.php"); ?>
 </html>
