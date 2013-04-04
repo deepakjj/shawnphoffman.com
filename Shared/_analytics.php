@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script async type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-16511878-3']);

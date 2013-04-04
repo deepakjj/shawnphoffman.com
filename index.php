@@ -66,7 +66,8 @@
     </div>
   </body>
   <? /* BOTTOM-LOAD JS (Optimize before deployment) */ ?>
-  <script>
+  <script defer src="/Content/scripts/jquery-1.9.1.min.js" type="text/javascript" ></script>
+  <script defer>
     jQuery("img.svg").each(function(){var e=jQuery(this);var t=e.attr("id");var n=e.attr("class");var r=e.attr("src");jQuery.get(r,function(r){var i=jQuery(r).find("svg");if(typeof t!=="undefined"){i=i.attr("id",t)}if(typeof n!=="undefined"){i=i.attr("class",n+" replaced-svg")}i=i.removeAttr("xmlns:a");e.replaceWith(i)})})
   </script>
   <? include_once("Shared/_scripts_bottom.php"); ?>
