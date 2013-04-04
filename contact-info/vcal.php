@@ -10,7 +10,7 @@
 	echo "UID:E6A23593-7115-4B32-A249-817D5293B70E\n";
 	echo "DTEND;VALUE=DATE:20130102\n";
 	echo "TRANSP:TRANSPARENT\n";
-	echo "SUMMARY:Click attachment to download my contact info.\n";
+	echo "SUMMARY:Click attachment to download my contact information.\n";
 	echo "DTSTART;VALUE=DATE:20130101\n";
 	echo "DTSTAMP:20121223T025849Z\n";
 	echo "SEQUENCE:3\n";
